@@ -1,0 +1,121 @@
+:root {
+  --primary-color: #25e069;
+  --bg-color: #8cc3a0;
+  --max-content-width: 1000px;
+}
+
+/* 
+  General
+  =======
+*/
+body {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--bg-color);
+}
+
+main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer {
+  margin-top: auto;
+  width: 100%;
+}
+
+a {
+  position: relative;
+  color: #000;
+  text-decoration: none;
+}
+
+a::before {
+  content: "";
+  background-color: var(--primary-color);
+  opacity: 0.5;
+  position: absolute;
+  width: 0;
+  height: 20%;
+  bottom: 10%;
+  transition-duration: 0.2s;
+}
+
+a:hover::before {
+  width: 100%;
+}
+
+a:active::before {
+  height: 100%;
+  width: 100%;
+  bottom: 0;
+  transition-duration: 0.1s;
+}
+
+.hero > .container > img {
+  border-left: 2px solid var(--primary-color);
+}
+
+.cards,
+.display-case, 
+main .call-to-action {
+  width: min(var(--max-content-width), 100%);
+  background-color: #fff;
+  border-left: 2px solid var(--primary-color);
+}
+
+
+/* 
+  Call to Action
+  ==============
+*/
+.call-to-action > .wrapper {
+  display: flex;
+  gap: 5px;
+}
+
+.call-to-action > .wrapper > * {
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.call-to-action > .wrapper > button {
+  flex: 1;
+  background-color: var(--primary-color);
+  border: 1px solid #fff;
+}
+
+.call-to-action > .wrapper > button:active {
+  transform: scale(0.95);
+}
+
+.call-to-action > .wrapper > input {
+  flex: 2;
+  border: 1px solid var(--primary-color);
+}
+
+/* 
+  Cards
+  ======
+*/
+.cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.cards > .container {
+  flex: 1;
+}
+
+/* 
+  Call To Action
+  ==============
+*/
+.call-to-action > .container {
+}

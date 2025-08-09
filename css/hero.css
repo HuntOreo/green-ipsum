@@ -1,0 +1,30 @@
+/* 
+  Hero
+  =====
+*/
+.hero {
+  max-width: var(--max-content-width);
+  margin: 0 auto;
+}
+
+.hero > .container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero > .container > img {
+  width: 100%;
+}
+
+.hero .call-to-action {
+  position: absolute;
+}
+
+.hero .call-to-action.header > p {
+  font-size: 10vmin;
+  color: #fff;
+  text-shadow: 0px 0px 15px var(--blue);
+}
