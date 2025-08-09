@@ -1,6 +1,7 @@
 :root {
   --primary-color: #25e069;
-  --bg-color: #8cc3a0;
+  --secondary-color: #d8a128;
+  --light-primary-color: #8cc3a0;
   --max-content-width: 1300px;
 }
 
@@ -14,7 +15,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: var(--bg-color);
+  background-color: var(--light-primary-color);
 }
 
 main {
@@ -97,39 +98,4 @@ main .call-to-action {
 .call-to-action > .wrapper > input {
   flex: 2;
   border: 1px solid var(--primary-color);
-}
-
-/* 
-  Cards
-  ======
-*/
-.cards {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-
-.cards > .container {
-  flex: 1;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  gap: 30px;
-  flex-wrap: wrap;
-  margin: 30px;
-}
-
-.card {
-  border: 1px solid black;
-  min-height: 300px;
-  width: clamp(250px, 350px, 30vw);
-}
-
-.card .avatar {
-  flex: 2
-}
-
-.card .avatar > img{
-  height: 50%;
-  width: 50%;
 }
