@@ -1,7 +1,8 @@
 :root {
   --primary-color: #25e069;
-  --bg-color: #8cc3a0;
-  --max-content-width: 1000px;
+  --secondary-color: #d8a128;
+  --light-primary-color: #8cc3a0;
+  --max-content-width: 1300px;
 }
 
 /* 
@@ -14,7 +15,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: var(--bg-color);
+  background-color: var(--light-primary-color);
 }
 
 main {
@@ -57,8 +58,11 @@ a:active::before {
   transition-duration: 0.1s;
 }
 
+.cards,
+.display-case, 
+main .call-to-action,
 .hero > .container > img {
-  border-left: 2px solid var(--primary-color);
+  border-left: 2px solid var(--secondary-color);
 }
 
 .cards,
@@ -66,9 +70,7 @@ a:active::before {
 main .call-to-action {
   width: min(var(--max-content-width), 100%);
   background-color: #fff;
-  border-left: 2px solid var(--primary-color);
 }
-
 
 /* 
   Call to Action
@@ -97,25 +99,4 @@ main .call-to-action {
 .call-to-action > .wrapper > input {
   flex: 2;
   border: 1px solid var(--primary-color);
-}
-
-/* 
-  Cards
-  ======
-*/
-.cards {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-
-.cards > .container {
-  flex: 1;
-}
-
-/* 
-  Call To Action
-  ==============
-*/
-.call-to-action > .container {
 }
