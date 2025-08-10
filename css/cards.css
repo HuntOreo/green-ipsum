@@ -52,7 +52,7 @@
 .card .avatar {
   width: max(200px, 75%);
   flex: 3;
-  margin: 0 auto;
+  margin: 10px auto;
   position: relative;
 }
 
@@ -73,4 +73,26 @@
   margin: auto;
   position: relative;
   z-index: 1;
+}
+
+.card > .container > .wrapper {
+  font-size: 1.5rem;
+}
+
+.card .wrapper > .name,
+.card .wrapper > blockquote {
+  padding: 5px 10px;
+  height: 100%;
+}
+
+.card .wrapper > .name {
+  position: relative;
+  top: 0px;
+  background: #5f5f5f80;
+  border-bottom-right-radius: 10px;
+  border-left: 5px solid var(--primary-color);
+}
+
+.card .wrapper > blockquote {
+  margin:0 auto;
 }
