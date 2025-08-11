@@ -88,7 +88,7 @@
 .card .wrapper > .name {
   position: relative;
   top: 0px;
-  background: #5f5f5f80;
+  background: var(--gray-accent);
   border-bottom-right-radius: 10px;
   border-left: 5px solid var(--primary-color);
 }
