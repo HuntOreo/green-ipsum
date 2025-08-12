@@ -70,6 +70,11 @@ a:active::before {
   transition-duration: 0.1s;
 }
 
+::selection {
+  color: #000;
+  background-color: var(--primary-color);
+}
+
 .cards,
 .display-case, 
 main .call-to-action {
@@ -87,27 +92,28 @@ main .call-to-action {
   Call to Action
   ==============
 */
-.call-to-action > .wrapper {
+.call-to-action .wrapper {
   display: flex;
   gap: 5px;
 }
 
-.call-to-action > .wrapper > * {
+.call-to-action .wrapper > * {
   padding: 5px;
   border-radius: 5px;
 }
 
-.call-to-action > .wrapper > button {
+.call-to-action .wrapper > button {
   flex: 1;
   background-color: var(--primary-color);
   border: 1px solid #fff;
 }
 
-.call-to-action > .wrapper > button:active {
+.call-to-action .wrapper > button:active {
   transform: scale(0.95);
 }
 
-.call-to-action > .wrapper > input {
+.call-to-action .wrapper > input {
   flex: 2;
   border: 1px solid var(--primary-color);
 }
+
