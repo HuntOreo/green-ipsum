@@ -8,6 +8,11 @@
 }
 
 /* 
+  take background
+    make the background a repeating pattern of light and dark green bars
+*/
+
+/* 
   General
   =======
 */
@@ -17,7 +22,17 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: var(--light-primary-color);
+  background-image: repeating-linear-gradient(
+    180deg, 
+    var(--secondary-color),
+    var(--secondary-color) 1px,
+    var(--primary-color) 1px, 
+    var(--primary-color) 11px,
+    var(--secondary-color) 11px,
+    var(--secondary-color) 12px,
+    var(--light-primary-color) 12px,
+    var(--light-primary-color) 22px
+  );
 }
 
 main {
