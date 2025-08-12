@@ -32,11 +32,11 @@
         <img src="./img/hero-dev.jpg" alt="A monitor displaying some code">
         <div class="call-to-action header">
           <p>Lorum Ipsum</p>
-          <div class="wrapper">
-            <input type="text" value="example@site.com">
-            <button>Subscribe!</button>
+          <form id="hero-form" class="wrapper" action="http://httpbin.org/post" method="post">
+            <input type="email" name="user_email" placeholder="example@site.com">
+            <button type="submit">Subscribe!</button>
           </div>
-        </div>
+        </form>
       </div>
     </div>
     
@@ -132,10 +132,10 @@
         <div class="container tagline">
           <p>This is some placeholder text meant to make you want to subscribe.</p>
         </div>
-        <div class="wrapper">
-          <input type="text" value="example@site.com">
-          <button>Sign up!</button>
-        </div>
+        <form id="cta-form" class="wrapper" action="http://httpbin.org/post" method="post">
+            <input type="email" name="user_email" placeholder="example@site.com">
+            <button type="submit">Subscribe!</button>
+        </form>
       </div>
     </main>
 
