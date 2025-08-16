@@ -19,14 +19,10 @@ body {
   align-items: center;
   background-image: repeating-linear-gradient(
     180deg, 
-    var(--secondary-color),
-    var(--secondary-color) 1px,
-    var(--primary-color) 1px, 
-    var(--primary-color) 11px,
-    var(--secondary-color) 11px,
-    var(--secondary-color) 12px,
-    var(--light-primary-color) 12px,
-    var(--light-primary-color) 22px
+    #66b983, 
+    #66b983 10px,
+    var(--light-primary-color) 1px,
+    var(--light-primary-color) 20px
   );
 }
 
