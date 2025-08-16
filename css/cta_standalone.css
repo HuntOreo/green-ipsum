@@ -19,12 +19,6 @@
   flex-wrap: wrap;
 }
 
-.call-to-action.standalone p {
-  font-size: clamp(1.25rem, 3vw, 30px);
-  flex: 4;
-  min-width: 250px;
-}
-
 .call-to-action.standalone #cta-form {
   flex: 5;
   display: flex;
@@ -35,12 +29,17 @@
 }
 
 .call-to-action.standalone .tagline > p {
+  flex: 4;
+  padding: 15px;
+  min-width: 250px;
   position: relative;
   z-index: 1;
-  padding: 15px;
+  
+  font-size: clamp(1.25rem, 3vw, 30px);
   background-color: var(--primary-color);
   border-radius: 10px;
   border-bottom-right-radius: min(7vw, 75px);
+  box-shadow: 0px 0px 5px var(--gray-accent);
 }
 
 .call-to-action.standalone form {
