@@ -3,3 +3,9 @@
     top: -30px;
   }
 }
+
+@media (max-width: 589px) {
+  .tagline img {
+    visibility: hidden;
+  }
+}

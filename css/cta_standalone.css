@@ -3,7 +3,7 @@
   justify-content: center;
   align-items: center;
   width: min(var(--max-content-width), 100%);
-  min-height: 25vh;
+  min-height: 40vh;
 }
 
 .call-to-action.standalone > .container {
@@ -29,4 +29,13 @@
 
 .call-to-action.standalone #cta-form > input {
   flex: 2;
+}
+
+.call-to-action.standalone .tagline > p {
+  position: relative;
+  z-index: 1;
+  padding: 15px;
+  background-color: var(--primary-color);
+  border-radius: 10px;
+  border-bottom-right-radius: min(7vw, 75px);
 }
