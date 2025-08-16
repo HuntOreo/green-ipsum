@@ -17,6 +17,14 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+
+}
+
+.bckgrnd {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
   background-image: repeating-linear-gradient(
     180deg, 
     #66b983, 
