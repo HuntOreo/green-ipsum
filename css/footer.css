@@ -1,10 +1,28 @@
 footer {
+  display: flex;
   min-height: 25vh;
-  
+  justify-content: center;
+
   background-color: #fff;
   border-top: 2px solid var(--primary-color);
 }
 
 footer > .container {
-  
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  max-width: var(--max-content-width);
+}
+
+footer nav {
+  margin-top: auto;
+}
+
+footer p {
+  align-self: center;
+  margin-top: auto;
+  margin-bottom: 20px;
+
+  font-size: 0.8rem;
+  color: var(--gray-accent);
 }

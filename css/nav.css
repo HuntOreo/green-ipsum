@@ -20,12 +20,12 @@ nav {
   width: 100%;
   flex-direction: row;
   height: 5rem;
+  font-size: 1.3rem;
 }
 
 nav > .container {
   display: flex;
   flex: 1;
-  font-size: 1.3rem;
   padding: 10px;
 }
 
